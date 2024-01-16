@@ -1,5 +1,6 @@
 require "sinatra"
 require "sinatra/reloader"
+require "http"
 
 get("/") do
   
@@ -16,7 +17,7 @@ get("/umbrella") do
 end
 
 get("/process_umbrella") do
-  @user_location = params.fetch("user_loc")
-  
+  @user_location = params.fetch("user_loc").capitalize
+
   erb(:umbrella_results)
 end
