@@ -1,0 +1,7 @@
+<h1>Should I take an umbrella?</h1>
+
+<form action="">
+  <label for="">Where are you located?</label>
+  <input type="text">
+  <button>Submit</button>
+</form>
